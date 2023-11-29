@@ -35,4 +35,11 @@ public class Yunque {
     public void oxidar(){
         oxidacion = !oxidacion;
     }
+     
+    public void imprimirDetalles(){
+        System.out.println("Tipo: " + tipo + "peso: " + peso + "oxidacion: " + oxidacion);
+    }
+    public String estadoYunque(){
+        return "tipo: " + tipo + "peso: " + peso + "oxidacion: " + oxidacion;
+    }
 }
