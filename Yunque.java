@@ -40,6 +40,6 @@ public class Yunque {
         System.out.println("Tipo: " + tipo + "peso: " + peso + "oxidacion: " + oxidacion);
     }
     public String estadoYunque(){
-        return "tipo: " + tipo + "peso: " + peso + "oxidacion: " + oxidacion;
+        return "tipo: " + tipo + "peso: " + peso + "oxidación: " + oxidacion;
     }
 }
