@@ -1,15 +1,15 @@
 public class Yunque {
 
     private String tipo;
-
     private int peso;
-
     private boolean oxidacion;
+    private boolean buenEstado;
 
     public Yunque (String tipoYunque, int pesoYunque){
         tipo = tipoYunque;
         peso = pesoYunque;
         oxidacion = true;  
+        buenEstado = true;
     }
 
     public String getTipo(){
@@ -41,5 +41,12 @@ public class Yunque {
     }
     public String estadoYunque(){
         return "tipo: " + tipo + "peso: " + peso + "oxidación: " + oxidacion;
+    }
+    public boolean getEstado(){
+        return buenEstado;
+    }
+    public void setEstado(boolean nuevoEstado){
+        this.buenEstado = nuevoEstado;
+    
     }
 }
