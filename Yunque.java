@@ -4,12 +4,14 @@ public class Yunque {
     private int peso;
     private boolean oxidacion;
     private boolean buenEstado;
+    private double pureza;
 
     public Yunque (String tipoYunque, int pesoYunque){
         tipo = tipoYunque;
         peso = pesoYunque;
         oxidacion = true;  
         buenEstado = true;
+        pureza = 1.0;
     }
 
     public String getTipo(){
@@ -37,10 +39,10 @@ public class Yunque {
     }
      
     public void imprimirDetalles(){
-        System.out.println("Tipo: " + tipo + "peso: " + peso + "oxidacion: " + oxidacion);
+        System.out.println("Tipo: " + tipo + "peso: " + peso + "oxidacion: " + oxidacion + "pureza: " + pureza);
     }
     public String estadoYunque(){
-        return "tipo: " + tipo + "peso: " + peso + "oxidación: " + oxidacion;
+        return "tipo: " + tipo + "peso: " + peso + "oxidación: " + oxidacion + "pureza: " + pureza;
     }
     public boolean getEstado(){
         return buenEstado;
@@ -49,4 +51,11 @@ public class Yunque {
         this.buenEstado = nuevoEstado;
     
     }
+    public double getPureza(){
+        return pureza;
+    }
+    public void setPureza(double nuevaPureza){
+        this.pureza = nuevaPureza;
+    }
+    
 }
