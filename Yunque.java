@@ -1,9 +1,7 @@
 public class Yunque {
 
     private String tipo;
-
     private int peso;
-
     private boolean oxidacion;
 
     public Yunque (String tipoYunque, int pesoYunque){
